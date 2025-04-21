@@ -1,0 +1,22 @@
+.hero-card {
+    position: absolute;
+    top: 15em;
+    right: 6em;
+    max-width: 400px;
+    height: fit-content;
+    padding: 2em;
+    background: #fff;
+    box-shadow: var(--global);
+
+    .title-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
