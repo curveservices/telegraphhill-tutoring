@@ -21,15 +21,15 @@ const DoubleImage = (props) => {
       />
       <div className="circle-shape"></div>
         <div className="subject-container">
-          <div className="card">
+          <div className="card ks1">
             <div className="card-title">KS1</div>
             <NavLink to='tuition'>Tuition</NavLink>
           </div>
-          <div className="card">
+          <div className="card ks2">
             <div className="card-title">KS2</div>
             <NavLink to='tuition'>Tuition</NavLink>
           </div>
-          <div className="card">
+          <div className="card 11-plus">
             <div className="card-title">11 +</div>
             <NavLink to='resources'>Resources</NavLink>
           </div>
