@@ -1,0 +1,43 @@
+ .second-section {
+     .second-inner {
+         display: flex;
+         gap: 10em;
+         padding: 5em 6em 3em;
+     }
+ }
+ .third-section {
+    .third-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 5em 6em;
+        .title {
+            width: 60%;
+        }
+    }
+ }
+ .forth-section {
+    background: var(--primary);
+    height: 500px;
+    .forth-inner {
+        padding: 6em;
+        .top {
+            display: flex;
+            gap: 250px;
+            .tutor-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            .tutor-img {
+                    width: 100%;
+                    max-width: 450px;
+                    height: 700px;
+                    object-fit: cover;
+                    box-shadow: var(--global);
+                }
+            }
+        
+        }
+        
+    }
+ }
