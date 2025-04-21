@@ -1,0 +1,40 @@
+.flat-btn {
+    text-transform: uppercase;
+    background: var(--secondary);
+    color: var(--main-font);
+    letter-spacing: 3.5px;
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 100px;
+    border: none;
+    min-width: fit-content;
+    box-shadow: var(--button-shadow);
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(2px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--main-font);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flat-btn {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .flat-btn {
+        font-size: 10px;
+        margin: 0;
+    }
+}
