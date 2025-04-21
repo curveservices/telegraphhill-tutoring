@@ -11,11 +11,14 @@ const Layout = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                setShowButton(true)
-            } else showButton(false);
+            if (window.scrollY > 75) {
+            setShowButton(true);
+            } else {
+            setShowButton(false);
+            }
         });
     }, []);
+    
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
