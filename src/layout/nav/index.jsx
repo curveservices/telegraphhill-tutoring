@@ -7,10 +7,9 @@ import {
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from '../../components/button';
-import logo from "../../assets/images/logobgr1.png";
-
+import logo from "../../assets/images/logobgr.webp";
+import MenuToggle from "../../components/menuToggle";
 import './index.scss';
-import MenuToggle from '../../components/menuToggle';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
