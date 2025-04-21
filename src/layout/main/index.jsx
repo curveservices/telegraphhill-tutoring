@@ -4,7 +4,7 @@ import Navbar from '../nav';
 import Footer from '../footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-
+import './index.scss'
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false);
@@ -39,7 +39,7 @@ const Layout = () => {
                   <FontAwesomeIcon icon={faArrowUp}/>
               </button>
           )}
-          <Footer />
+          {/* <Footer /> */}
           <ScrollRestoration />
     </>
   )
