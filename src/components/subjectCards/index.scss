@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5em;
+    gap: 2em;
+    .card {
+        width: 394px;
+        height: auto;
+        border-bottom: 8px solid var(--secondary);
+        box-shadow: var(--global);
+        .image {
+            width: 394px;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 0.5em 1em;
+            .top-text {
+                color: var(--body-font);
+            }
+        }
+    }
+}
