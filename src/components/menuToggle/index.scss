@@ -10,5 +10,8 @@
         height: 50px;
         font-size: 24px;
         cursor: pointer;
+        svg {
+            color: var(--body-font);
+        }
     }
 }
