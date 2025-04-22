@@ -76,11 +76,10 @@ const Home = () => {
                 alt="Private 11 plus tutor in London"
                 className="tutor-img"
               />
-              <p>
-                Get In Touch With Me for Private Tutoring Sessions
-              </p>
+              <p>Get In Touch With Me for Private Tutoring Sessions</p>
               <Button link="contact-m" text="Contact Me" />
             </div>
+            <div className="right-container"></div>
             <div className="text-box">
               <div className="subtitle">
                 <div className="indent"></div>
@@ -95,6 +94,35 @@ const Home = () => {
                   their potential.
                 </p>
               </div>
+              <ul className="list-container">
+                <li className="title">
+                  <h2 className="number">01 </h2>
+                  <div className="indent"></div>
+                  <h3> Expertise and Experience</h3>
+                </li>
+                <li className="desc">
+                  Qualified, experienced tutor with a proven track record of
+                  helping students succeed in core subjects and entrance exams.
+                </li>
+                <li className="title">
+                  <h2 className="number">02</h2>
+                  <div className="indent"></div>
+                  <h3>Personalised Approach</h3>
+                </li>
+                <li className="desc">
+                  Tailored lessons to suit your child’s unique learning style,
+                  pace, and goals for maximum progress and confidence.
+                </li>
+                <li className="title">
+                  <h2 className="number">03</h2>
+                  <div className="indent"></div>
+                  <h3>Confidentiality and Trust</h3>
+                </li>
+                <li className="desc">
+                  A safe, supportive learning space built on trust, discretion,
+                  and genuine care for your child’s development and success.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

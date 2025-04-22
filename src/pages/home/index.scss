@@ -23,7 +23,8 @@
         padding: 6em;
         .top {
             display: flex;
-            gap: 250px;
+            justify-content: space-between;
+            gap: 5rem;
             .tutor-container {
                 display: flex;
                 flex-direction: column;
@@ -36,8 +37,23 @@
                     box-shadow: var(--global);
                 }
             }
-        
         }
+    }
+    .list-container {
+        margin-top: 10em;
+        li {
+                display: flex;
+                align-items: center;
+                gap: 2em;
+            }
+
+            .title {
+                padding: 1em 0;
+            }
         
+        .desc {
+            font-family: 'Inter', serif;
+            font-size: 18px;
+        }
     }
  }
