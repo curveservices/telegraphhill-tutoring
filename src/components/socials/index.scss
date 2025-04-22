@@ -1,0 +1,37 @@
+.iconList {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+.icons {
+  a {
+    color: var(--body-font);
+    padding: 8px;
+    display: block;
+    font-size: 26px;
+    line-height: 20px;
+    &:hover svg {
+      color: var(--secondary);
+      transform: scale(1.05);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .iconList {
+    top: 0;
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 20px;
+  }
+  .icons {
+    a {
+      font-size: 16px;
+      line-height: 0px;
+      padding: 0px;
+    }
+  }
+}
