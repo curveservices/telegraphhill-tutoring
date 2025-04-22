@@ -7,45 +7,47 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import './index.scss'
 
 const Layout = () => {
-    const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 75) {
-            setShowButton(true);
-            } else {
-            setShowButton(false);
-            }
-        });
-    }, []);
-    
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 75);
     };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+    
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <>
-          <Navbar />
-          <main className="app">
-              <Outlet />
-          </main>
-          {showButton && (
-              <button
-                  className='back-to-top'
-                  name='back to top'
-                  aria-label='back top top of page'
-                  onClick={scrollToTop}
-              >
-                  <FontAwesomeIcon icon={faArrowUp}/>
-              </button>
-          )}
-          {/* <Footer /> */}
-          <ScrollRestoration />
-    </>
-  )
-}
+    <div className="layout-wrapper">
+      <Navbar />
+      <main className="app">
+        <Outlet />
+      </main>
+      {showButton && (
+        <button
+          className="back-to-top"
+          name="back to top"
+          aria-label="back top top of page"
+          onClick={scrollToTop}
+        >
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
+      )}
+      <Footer />
+      <ScrollRestoration />
+    </div>
+  );
+};
 
 export default Layout
