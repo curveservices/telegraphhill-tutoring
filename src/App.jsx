@@ -5,6 +5,7 @@ import LoadingSpinner from './components/loadingSpinner'
 import Home from './pages/home'
 
 import './App.scss';
+import Tuition from './pages/tuition/index.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,14 @@ const router = createBrowserRouter(
             </Suspense>
           }
         />
+        <Route
+          path='tuition'
+          element={
+            <Suspense fallback={<LoadingSpinner />} >
+              <Tuition />
+            </Suspense>
+          }
+          />
       </Route>
     </>
   )
