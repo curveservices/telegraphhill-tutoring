@@ -19,6 +19,7 @@ const HeroCard = () => {
         My tutoring can be provided from the comfort of your home, or online
         using a platform of you choice
       </p>
+      <div className="div-line"></div>
       <div className="contact-container">
         <div className="contact">
           <FontAwesomeIcon icon={faPhone} />
