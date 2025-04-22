@@ -17,43 +17,100 @@
     }
  }
  .forth-section {
-    background: var(--primary);
-    height: 500px;
-    .forth-inner {
-        padding: 6em;
-        .top {
-            display: flex;
-            justify-content: space-between;
-            gap: 5rem;
-            .tutor-container {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-            .tutor-img {
-                    width: 100%;
-                    max-width: 450px;
-                    height: 700px;
-                    object-fit: cover;
-                    box-shadow: var(--global);
-                }
+     .forth-inner {
+         z-index: 2;
+         padding: 6em;
+
+         .top {
+             display: flex;
+             justify-content: space-between;
+             gap: 5rem;
+
+             .tutor-container {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 2rem;
+
+                 .tutor-img {
+                     width: 100%;
+                     max-width: 450px;
+                     height: 700px;
+                     object-fit: cover;
+                     box-shadow: var(--global);
+                 }
+             }
+         }
+     }
+
+     .list-container {
+         margin-top: 10em;
+
+         li {
+             display: flex;
+             align-items: center;
+             gap: 2em;
+         }
+
+         .title {
+             padding: 1em 0;
+         }
+
+         .desc {
+             font-family: 'Inter', serif;
+             font-size: 18px;
+         }
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+    .second-section {
+        .second-inner {
+            flex-direction: column;
+            gap: 4em;
+            padding: 2em;
+        }
+    }
+
+    .third-section {
+        .third-inner {
+            flex-direction: column;
+            align-items: start;
+            gap: 2em;
+            padding: 2em;
+
+            .title {
+                width: 100%;
             }
         }
     }
-    .list-container {
-        margin-top: 10em;
-        li {
-                display: flex;
-                align-items: center;
-                gap: 2em;
+
+    .forth-section {
+        .forth-inner {
+            z-index: 2;
+            padding: 2em;
+
+            .top {
+                flex-direction: column-reverse;
+                gap: 2rem;
+
+                .tutor-container {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+        }
+
+        .list-container {
+            margin-top: 4em;
+
+            li {
+                gap: 1em;
             }
 
-            .title {
-                padding: 1em 0;
+            .desc {
+                font-family: 'Inter', serif;
+                font-size: 14px;
             }
-        
-        .desc {
-            font-family: 'Inter', serif;
-            font-size: 18px;
         }
     }
  }

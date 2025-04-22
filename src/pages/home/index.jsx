@@ -68,6 +68,7 @@ const Home = () => {
         <SubjectCards />
       </section>
       <section className="forth-section">
+        <div className="background"></div>
         <div className="forth-inner">
           <div className="top">
             <div className="tutor-container">
