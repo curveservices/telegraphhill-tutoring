@@ -9,6 +9,7 @@
         height: auto;
         border-bottom: 8px solid var(--secondary);
         box-shadow: var(--global);
+        transition: all 0.3s ease-in-out;
         .image {
             width: 394px;
             height: auto;
@@ -21,6 +22,29 @@
             padding: 0.5em 1em;
             .top-text {
                 color: var(--body-font);
+            }
+        }
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: var(--box);
+        }
+        .link {
+            font-family: 'Unna', serif;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        .card {
+            width: 350px;
+           
+            .image {
+                width: 350px;
             }
         }
     }
