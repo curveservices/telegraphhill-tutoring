@@ -5,6 +5,7 @@ import {
   faLocation,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Socials from '../socials';
 import './index.scss';
 
 const HeroCard = () => {
@@ -31,6 +32,7 @@ const HeroCard = () => {
           <FontAwesomeIcon icon={faLocation} />
           <p> Musgrove Road, New Cross, London</p>
         </div>
+        <Socials />
       </div>
     </div>
   );
