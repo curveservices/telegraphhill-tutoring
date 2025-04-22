@@ -26,6 +26,12 @@
             border-top: 8px solid var(--secondary);
             box-shadow: var(--box);
             background: var(--light);
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.04);
+                box-shadow: var(--global);
+                
+            }
         }
     }
 
