@@ -1,13 +1,13 @@
-import React from 'react';
-import hero from '../../assets/images/home-img.webp'
-import HeroCard from '../../components/heroCard';
-import DoubleImage from '../../components/doubleImage';
-import img1 from '../../assets/images/online1.webp';
-import img2 from '../../assets/images/about1.webp';
-import vanessa from '../../assets/images/vanessa.webp';
-import Button from '../../components/button';
-import SubjectCards from '../../components/subjectCards';
-import './index.scss';
+import React from "react";
+import hero from "../../assets/images/home-img.webp";
+import HeroCard from "../../components/heroCard";
+import DoubleImage from "../../components/doubleImage";
+import img1 from "../../assets/images/online1.webp";
+import img2 from "../../assets/images/about1.webp";
+import vanessa from "../../assets/images/vanessa.webp";
+import Button from "../../components/button";
+import SubjectCards from "../../components/subjectCards";
+import "./index.scss";
 
 const Home = () => {
   return (
@@ -23,11 +23,16 @@ const Home = () => {
             <div className="hero-p">
               <div className="hero-indent"></div>
               <p>
-                I provide one on one tutoring in South East London for Key Stage
-                1, Key Stage 2 and 11 plus exam prep.
+                Providing one-on-one tutoring in South East London.
               </p>
             </div>
-            <HeroCard />
+            <HeroCard
+              title="Find Me"
+              p1=" 
+              My tutoring can be provided from the comfort of your home, or online
+              using a platform of you choice"
+              divLine={false}
+            />
           </div>
         </div>
         <img
@@ -37,18 +42,35 @@ const Home = () => {
         />
       </section>
       <section className="second-section">
+        <div className="background"></div>
         <div className="second-inner">
           <DoubleImage
             img1={img1}
             img2={img2}
             subtitle="About Me"
-            title="Expert Tutoring for Brighter Futures"
-            p1="If You Live In The Surrounding Areas Of Lewisham Including
-                  Dulwich, Peckham & Camberwell, I Can Travel To You. I Will
-                  Deliver Sessions In The Comfort Of Your Own Home."
-            p2="I Offer Online Tuition Over Various Platforms Like Google Meet
-                  And Skype So Your Child Can Access The Same Quality Of
-                  Teaching As With Face To Face Home Tutoring Lessons."
+            title="What to Expect from my Tutoring Sessions"
+            p1="If You Live In The Surrounding Areas Of Lewisham Including Dulwich, Peckham & Camberwell, I Can Travel To You. I Will Deliver Sessions In The Comfort Of Your Own Home."
+            p2="I Offer Online Tuition Over Various Platforms Like Google Meet And Skype So Your Child Can Access The Same Quality Of Teaching As With Face To Face Home Tutoring Lessons."
+            cards={[
+              {
+                to: "tuition",
+                title: "KS1",
+                text: "Tuition",
+                className: "ks1",
+              },
+              {
+                to: "tuition",
+                title: "KS2",
+                text: "Tuition",
+                className: "ks2",
+              },
+              {
+                to: "resources",
+                title: "11 +",
+                text: "Resources",
+                className: "11-plus",
+              },
+            ]}
           />
         </div>
       </section>
@@ -68,8 +90,8 @@ const Home = () => {
         <SubjectCards />
       </section>
       <section className="forth-section">
-        <div className="background"></div>
         <div className="forth-inner">
+          <div className="background"></div>
           <div className="top">
             <div className="tutor-container">
               <img
@@ -130,6 +152,6 @@ const Home = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
