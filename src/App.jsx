@@ -3,9 +3,11 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from './layout/main/index.jsx';
 import LoadingSpinner from './components/loadingSpinner'
 import Home from './pages/home'
+import Tuition from "./pages/tuition/index.jsx";
+import Resources from "./pages/resources/index.jsx";
+import NotFound from './pages/404/index.jsx';
 
 import './App.scss';
-import Tuition from './pages/tuition/index.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,8 +28,23 @@ const router = createBrowserRouter(
               <Tuition />
             </Suspense>
           }
-          />
+        />
+        <Route
+          path='resources'
+          element={
+            <Suspense fallback={<LoadingSpinner />} >
+              <Resources />
+            </Suspense>}
+        />
       </Route>
+      <Route
+        path='*'
+        element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <NotFound />
+          </Suspense>
+        }
+      />
     </>
   )
 )
