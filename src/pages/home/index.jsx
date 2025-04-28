@@ -8,8 +8,11 @@ import vanessa from "../../assets/images/vanessa.webp";
 import Button from "../../components/button";
 import SubjectCards from "../../components/subjectCards";
 import "./index.scss";
+import useScrollStates from "../../components/scrollState";
 
 const Home = () => {
+  const { second, third, forth } = useScrollStates();
+
   return (
     <div className="home-page">
       <section className="hero">
@@ -40,9 +43,9 @@ const Home = () => {
           loading="lazy"
         />
       </section>
-      <section className="second-section">
+      <section className={`second-section ${second ? "anim" : "none"}`}>
         <div className="background"></div>
-        <div className="second-inner">
+        <div className={`second-inner `}>
           <DoubleImage
             img1={img1}
             img2={img2}
@@ -73,7 +76,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="third-section">
+      <section className={`third-section ${third ? "anim" : "none"}`}>
         <div className="third-inner">
           <div className="text-box">
             <div className="subtitle">
