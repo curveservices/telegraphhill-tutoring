@@ -1,0 +1,115 @@
+.tuition-page {
+    .tuition-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8em;
+        .card {
+            display: flex;
+            gap: 4em;
+            .img-container {
+                position: relative;
+                .card-image {
+                    display: block;
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                    box-shadow: var(--box);
+                }
+                .square {
+                    position: absolute;
+                    bottom: -10%;
+                    left: -3em;
+                    width: 125px;
+                    height: 100px;
+                    text-align: center;
+                    box-shadow: var(--box);
+                    border-top: 8px solid var(--secondary);
+                    background: var(--light);
+                    .card-title {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        .reverse.card {
+            flex-direction: row-reverse;
+            .square {
+                left: 20rem
+            }
+        }
+    }
+    .forth-inner {
+        display: flex;
+        .reverse {
+            flex-direction: row-reverse;
+        }
+        .subject {
+            position: relative;
+        }
+        .top-text {
+            display: flex;
+            gap: 12em;
+            position: relative;
+            padding: 5em 6em;
+        }
+        .bottom-text {
+            display: flex;
+            gap: 6em;
+            padding: 4em 4.6em;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .tuition-page {
+        .tuition-container {
+            gap: 8em;
+
+            .card {
+                flex-direction: column;
+                gap: 2em;
+
+                .img-container {
+                    .card-image {
+                        width: 350px;
+                        height: 350px;
+                    }
+
+                    .square {
+                        bottom: -12%;
+                        left: 7em;
+
+                        .card-title {
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .reverse.card {
+                flex-direction: column;
+            }
+        }
+        .forth-section {
+            .forth-inner {
+                    display: flex;
+                    flex-direction: column;
+                    .reverse { 
+                        flex-direction: row-reverse;
+                    }
+            
+                    .top-text {
+                        flex-direction: column;
+                        gap: 5em;
+                        padding: 2em;
+                    }
+            
+                    .bottom-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2em;
+                        padding: 2em;
+                    }
+                }
+        }
+    }
+}
