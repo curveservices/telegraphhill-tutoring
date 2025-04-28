@@ -115,7 +115,7 @@ const Navbar = () => {
           </div>
           <Button
             text="Contact Me"
-            link="contact"
+            link="contact-me"
             onClick={() => setShowNav(false)}
           />
         </nav>
