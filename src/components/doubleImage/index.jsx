@@ -1,61 +1,74 @@
-import React from 'react';
-import './index.scss';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import "./index.scss";
 
-const DoubleImage = (props) => {
+const DoubleImage = ({ img1, img2, subtitle, title, p1, p2, cards }) => {
   return (
     <>
-      <div className="image-container">
-        <div className="square-shape"></div>
+      <motion.div
+        className="image-container"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="square-shape" />
         <img
-          src={props.img1}
+          src={img1}
           alt="Private 11 plus tutor in London"
           className="image"
+          loading="lazy"
           style={{ marginBottom: "60px" }}
         />
         <img
-          src={props.img2}
+          src={img2}
           alt="Private tutoring lessons in south east London"
           className="image"
+          loading="lazy"
           style={{ marginTop: "60px" }}
         />
-        <div className="circle-shape"></div>
+        <div className="circle-shape" />
+
         <div className="subject-container">
-          <NavLink to="tuition">
-            <div className="card ks1">
-              <div className="card-title">KS1</div>
-              <div className="text">Tuition</div>
-            </div>
-          </NavLink>
-          <NavLink to="tuition">
-            <div className="card ks2">
-              <div className="card-title">KS2</div>
-              <div className="text">Tuition</div>
-            </div>
-          </NavLink>
-          <NavLink to="resources">
-            <div className="card 11-plus">
-              <div className="card-title">11 +</div>
-              <div className="text">Resources</div>
-            </div>
-          </NavLink>
+          {cards?.map((card, i) => (
+            <NavLink
+              to={card.to}
+              key={i}
+              aria-label={card.ariaLabel || card.text}
+            >
+              <div
+                className={`card ${card.className || ""}`}
+                role="button"
+                tabIndex={0}
+              >
+                <div className="card-title">{card.title}</div>
+                <div className="text">{card.text}</div>
+              </div>
+            </NavLink>
+          ))}
         </div>
-      </div>
-      <div className="text-box">
+      </motion.div>
+
+      <motion.div
+        className="image-text-box"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.8 }}
+      >
         <div className="subtitle">
-          <div className="indent"></div>
-          <div>{props.subtitle}</div>
+          <div className="indent" />
+          <div>{subtitle}</div>
         </div>
-        <h2 className="title">{props.title}</h2>
+        <h2 className="title">{title}</h2>
         <div className="hero-p">
           <div className="text-box-bottom">
-            <p>{props.p1}</p>
-            <p>{props.p2}</p>
+            <p>{p1}</p>
+            <p>{p2}</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
-}
+};
 
-export default DoubleImage
+export default DoubleImage;
