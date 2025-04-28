@@ -2,9 +2,9 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDESdkGQmnO3Dzpe1OxbkKYf41oD5rd9A8",
-  authDomain: "telegraph-tutoring.firebaseapp.com",
-  projectId: "telegraph-tutoring",
+  apiKey: import.meta.env.VITE_APP_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: "telegraph-tutoring.appspot.com",
   messagingSenderId: "189709525863",
   appId: "1:189709525863:web:09b2b993718903291bc5c2",
