@@ -16,7 +16,16 @@
     .privacy-policy {
         animation: fadeIn 1s forwards;
         padding-top: 5rem;
-
+        .anim {
+            animation: fadeIn 1.5s forwards;
+            opacity: 1;
+            transform: none;
+            transition: all 0.5s ease;
+            }
+        
+        .none {
+            opacity: 0;
+        }
         h1 {
             font-family: 'Unna', serif;
             font-size: 4rem;
@@ -106,7 +115,6 @@
                 height: 600px;
                 object-fit: cover;
                 object-position: center;
-                display: block;
                 opacity: 1;
                 z-index: -1;
             }
