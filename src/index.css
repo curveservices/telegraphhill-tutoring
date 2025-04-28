@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "animate.css";
 
 :root {
   --primary: #BED5CD;
   --secondary: #DD98B0;
   --light: #F6F8F9;
+  --background: linear-gradient(to bottom, var(--primary), var(--primary), var(--light));
   --main-font: #2E3538;
   --body-font: #666C6F;
   --global: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
