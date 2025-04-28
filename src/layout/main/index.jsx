@@ -29,7 +29,7 @@ const Layout = () => {
   };
 
   return (
-    <div className="layout-wrapper">
+    <>
       <Navbar />
       <main className="app">
         <Outlet />
@@ -46,7 +46,7 @@ const Layout = () => {
       )}
       <Footer />
       <ScrollRestoration />
-    </div>
+    </>
   );
 };
 
