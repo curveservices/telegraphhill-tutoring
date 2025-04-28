@@ -9,6 +9,7 @@ import SubjectCards from '../../components/subjectCards';
 import ResourceTable from '../../components/resourceTable';
 import Button from '../../components/button';
 import './index.scss';
+import Helmet from '../../components/helmet';
 
 const Resources = () => {
   const [selectedSubject, setSelectedSubject] = useState('english-11plus');
@@ -106,13 +107,18 @@ const Resources = () => {
           <div className="btn-container">
             <Button text="see all tuition" link="/tuition" />
           </div>
-          </div>
-          <SubjectCards
-            link1="/tuition#1"
-            link2="/tuition#1"
-            link3="/tuition#3"
-          />
+        </div>
+        <SubjectCards
+          link1="/tuition#1"
+          link2="/tuition#1"
+          link3="/tuition#3"
+        />
       </section>
+      <Helmet
+        title="Resources | Private Tutoring in South East London"
+        description="Telegraph Hill Tutoring, resources for key stage 1 and 2 and 11 plus prep"
+        keywords="Private tutor, private lessons, 11 plus, key stage 1, key stage 2, South-east London, London"
+      />
     </div>
   );
 }

@@ -72,9 +72,9 @@ const Contact = () => {
         <Socials />
       </div>
       <Helmet
-        title="Contact Me | London Cuotume Desgin for Theatre and Film"
-        description="Emma Hollows Desgin, I am a costume and set designer and maker currently working on London's West End"
-        keywords="London's West-end, theatre, costume designer, costume maker, set designer, London, theatre"
+        title="Contact Me | Private Tutoring in South East London"
+        description="Telegraph Hill Tutoring, I provide private tutoring for key stage 1 and 2 and 11 plus prep"
+        keywords="Private tutor, private lessons, 11 plus, key stage 1, key stage 2, South-east London, London"
       />
     </div>
   );

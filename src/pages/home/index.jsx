@@ -9,6 +9,7 @@ import Button from "../../components/button";
 import SubjectCards from "../../components/subjectCards";
 import "./index.scss";
 import useScrollStates from "../../components/scrollState";
+import Helmet from "../../components/helmet";
 
 const Home = () => {
   const { second, third, forth } = useScrollStates();
@@ -152,6 +153,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Helmet
+        title="Telegraph Hill Tutoring | Private Tutoring in South East London"
+        description="Telegraph Hill Tutoring, I provide private tutoring for key stage 1 and 2 and 11 plus prep"
+        keywords="Private tutor, private lessons, 11 plus, key stage 1, key stage 2, South-east London, London"
+      />
     </div>
   );
 };

@@ -12,6 +12,7 @@ import plus1 from '../../assets/images/11plus.webp';
 import plus2 from '../../assets/images/11plus2.webp';
 import CTA from '../../components/cta';
 import DoubleImage from '../../components/doubleImage';
+import Helmet from '../../components/helmet';
 import './index.scss';
 
 const Tuition = () => {
@@ -399,6 +400,11 @@ const Tuition = () => {
           </div>
         </div>
       </section>
+      <Helmet
+        title="Tuition | Private Tutoring in South East London"
+        description="Telegraph Hill Tutoring, I provide private tutoring for key stage 1 and 2 and 11 plus prep"
+        keywords="Private tutor, private lessons, 11 plus, key stage 1, key stage 2, South-east London, London"
+      />
     </div>
   );
 }
