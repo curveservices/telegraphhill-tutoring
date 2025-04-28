@@ -8,6 +8,7 @@ import Resources from "./pages/resources/index.jsx";
 import NotFound from './pages/404/index.jsx';
 
 import './App.scss';
+import Contact from './pages/contact/index.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +36,14 @@ const router = createBrowserRouter(
             <Suspense fallback={<LoadingSpinner />} >
               <Resources />
             </Suspense>}
+        />
+        <Route
+          path='contact-me'
+          element={
+            <Suspense fallback={<LoadingSpinner />} >
+              <Contact />
+            </Suspense>
+          }
         />
       </Route>
       <Route
