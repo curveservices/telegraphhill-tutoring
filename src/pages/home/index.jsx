@@ -21,10 +21,8 @@ const Home = () => {
             </div>
             <h1 className="title">Expert Tutoring for Brighter Futures</h1>
             <div className="hero-p">
+              <p>Providing one-on-one tutoring in South East London.</p>
               <div className="hero-indent"></div>
-              <p>
-                Providing one-on-one tutoring in South East London.
-              </p>
             </div>
             <HeroCard
               title="Find Me"
@@ -39,6 +37,7 @@ const Home = () => {
           src={hero}
           alt="Private tutor in blackeath Dulwich Peckham"
           className="hero-img"
+          loading="lazy"
         />
       </section>
       <section className="second-section">
