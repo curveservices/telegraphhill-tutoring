@@ -44,8 +44,9 @@ const Tuition = () => {
         </div>
         <img
           src={hero}
-          alt="Private tutor in blackeath Dulwich Peckham"
+          alt="Private tutor in blackheath Dulwich Peckham"
           className="hero-img"
+          loading="lazy"
         />
       </section>
       <section className="second-section">
@@ -156,13 +157,15 @@ const Tuition = () => {
       </section>
       <section className="third-section">
         <div className="third-inner">
-          <CTA />
+          <div className="cta">
+            <CTA />
+          </div>
         </div>
       </section>
       <section className="forth-section">
         <div className="forth-inner">
           <div className="subject-container">
-            <div className="subject">
+            <div className="subject" id="1">
               <div className="background"></div>
               <div className="top-text">
                 <DoubleImage
@@ -174,19 +177,19 @@ const Tuition = () => {
                   p2="English is the language of communication, analysis, expression, and creativity. Whether it’s crafting ideas in a science report or interpreting themes in history, strong literacy skills empower students to understand and articulate concepts clearly and confidently."
                   cards={[
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS1",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks1",
                     },
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS2",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks2",
                     },
                     {
-                      to: "resources",
+                      to: "/resources",
                       title: "11 +",
                       text: "Resources",
                       className: "11-plus",
@@ -252,19 +255,19 @@ const Tuition = () => {
                   p2="Studies have shown that students who excel in Maths often develop greater grey matter volume in areas of the brain linked to attention and decision-making. With the right guidance, your child can build the confidence and skills needed to thrive—not just in Maths, but across their entire learning journey."
                   cards={[
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS1",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks1",
                     },
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS2",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks2",
                     },
                     {
-                      to: "resources",
+                      to: "/resources",
                       title: "11 +",
                       text: "Resources",
                       className: "11-plus",
@@ -317,7 +320,7 @@ const Tuition = () => {
               </div>
             </div>
 
-            <div className="subject">
+            <div className="subject" id="3">
               <div className="background"></div>
               <div className="top-text reverse">
                 <DoubleImage
@@ -329,19 +332,19 @@ const Tuition = () => {
                   p2="Every child is different, so I begin with an initial assessment to tailor a personalised scheme of learning that targets their strengths and areas for development. While many independent schools write and mark their own entrance exams, most 11+ assessments are based on the GL and CEM syllabi. I adapt my tutoring to meet the specific requirements of your chosen schools and local area."
                   cards={[
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS1",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks1",
                     },
                     {
-                      to: "tuition",
+                      to: "/resources",
                       title: "KS2",
-                      text: "Tuition",
+                      text: "Resources",
                       className: "ks2",
                     },
                     {
-                      to: "resources",
+                      to: "/resources",
                       title: "11 +",
                       text: "Resources",
                       className: "11-plus",
