@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img1 from '../../assets/images/ks2.webp';
 import img2 from '../../assets/images/ks3.webp';
 import img3 from '../../assets/images/gcse.webp';
 import './index.scss';
 
-const SubjectCards = () => {
+const SubjectCards = (props) => {
   return (
     <div className="card-container">
       <div className="card">
@@ -17,9 +17,9 @@ const SubjectCards = () => {
             Your child will be ready to take tests in May. You’ll be sent the
             results of your child’s teacher assessments automatically.
           </div>
-          <NavLink to="/" className="link">
+          <Link to={props.link1} className="link">
             LEARN MORE
-          </NavLink>
+          </Link>
         </div>
       </div>
       <div className="card">
@@ -31,9 +31,9 @@ const SubjectCards = () => {
             Your child will be ready to take tests in July. The school will send
             results of your child’s tests and teacher assessments.
           </div>
-          <NavLink to="/" className="link">
+          <Link to={props.link2} className="link">
             LEARN MORE
-          </NavLink>
+          </Link>
         </div>
       </div>
       <div className="card">
@@ -45,9 +45,9 @@ const SubjectCards = () => {
             Your child will be ready to take tests in July. The school will send
             results of your child’s tests and teacher assessments.
           </div>
-          <NavLink to="/" className="link">
+          <Link to={props.link3} className="link">
             LEARN MORE
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>
