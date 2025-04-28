@@ -44,7 +44,7 @@ const Navbar = () => {
             className="logo"
           />
         </NavLink>
-        <nav className={showNav ? "mobile" : ""}>
+        <nav className={showNav ? "mobile-show" : ""}>
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
