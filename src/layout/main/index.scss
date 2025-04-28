@@ -72,12 +72,10 @@
         .text-box {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 2rem;
             width: 50%;
             .hero-p {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
                 .hero-indent {
                     width: 7.5em;
                     height: 2px;
