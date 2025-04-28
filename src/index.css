@@ -3,7 +3,7 @@
 :root {
   --primary: #BED5CD;
   --secondary: #DD98B0;
-  --light: #F6F8F9;
+  --light: #f6f9f7;
   --background: linear-gradient(to bottom, var(--primary), var(--primary), var(--light));
   --main-font: #2E3538;
   --body-font: #666C6F;
