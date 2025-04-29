@@ -12,8 +12,15 @@
                 justify-content: center;
                 gap: 2em;
                 padding-bottom: 2em;
+                .flat-btn {
+                    width: 150px
+                }
             }
         }
+    }
+    .cta-section {
+        padding: 5em 6em;
+        background: #fff;
     }
     .forth-section{ 
         position: relative;
@@ -47,6 +54,9 @@
                     flex-wrap: wrap;
                     gap: 1em;
                     padding-bottom: 2em;
+                    .flat-btn {
+                        width: 100px;
+                    }
                 }
             }
         }

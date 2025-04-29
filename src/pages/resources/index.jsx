@@ -88,7 +88,7 @@ const Resources = () => {
           />
         </div>
       </section>
-      <section className="third-section">
+      <section className="cta-section">
         <CTA />
       </section>
       <section className="forth-section">
