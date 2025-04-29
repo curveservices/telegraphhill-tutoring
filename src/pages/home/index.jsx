@@ -56,14 +56,14 @@ const Home = () => {
             p2="I Offer Online Tuition Over Various Platforms Like Google Meet And Skype So Your Child Can Access The Same Quality Of Teaching As With Face To Face Home Tutoring Lessons."
             cards={[
               {
-                to: "tuition",
-                title: "KS1",
+                to: "tuition/#1",
+                title: "English",
                 text: "Tuition",
                 className: "ks1",
               },
               {
-                to: "tuition",
-                title: "KS2",
+                to: "tuition/#2",
+                title: "Maths",
                 text: "Tuition",
                 className: "ks2",
               },
@@ -90,7 +90,11 @@ const Home = () => {
             <Button text="see all tuition" link="tuition" />
           </div>
         </div>
-        <SubjectCards />
+        <SubjectCards
+          link1='/tuition/#1'
+          link2='/tuition/#1'
+          link3='/tuition/#3'
+        />
       </section>
       <section className="forth-section">
         <div className="forth-inner">
