@@ -67,19 +67,19 @@ const Resources = () => {
         <div className="third-inner">
           <div className="btn-container">
             <Button
-              text="11 Plus English"
+              text="English"
               onClick={() => handleSubjectChange("english-11plus")}
             />
             <Button
-              text="11 Plus Maths"
+              text="Maths"
               onClick={() => handleSubjectChange("maths")}
             />
             <Button
-              text="11 Plus Verbal"
+              text="Verbal"
               onClick={() => handleSubjectChange("verbal")}
             />
             <Button
-              text="11 Plus Non-Verbal"
+              text="Non-Verbal"
               onClick={() => handleSubjectChange("non-verbal")}
             />
           </div>
