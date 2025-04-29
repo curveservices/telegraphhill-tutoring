@@ -242,7 +242,7 @@ const Tuition = () => {
                 </div>
               </div>
             </div>
-            <div className="subject">
+            <div className="subject" id='2'>
               <div className="background"></div>
               <div className="top-text reverse">
                 <DoubleImage
