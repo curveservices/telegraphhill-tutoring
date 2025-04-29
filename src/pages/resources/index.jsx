@@ -30,7 +30,7 @@ const Resources = () => {
             <h1 className="title">Resources to Boost Your Child's Potential</h1>
             <div className="hero-p">
               <div className="hero-indent"></div>
-              <p></p>
+              <p>Helping Your Child Reach Their Full Potential</p>
             </div>
             <HeroCard
               title="Practice Papers"
@@ -70,10 +70,7 @@ const Resources = () => {
               text="English"
               onClick={() => handleSubjectChange("english-11plus")}
             />
-            <Button
-              text="Maths"
-              onClick={() => handleSubjectChange("maths")}
-            />
+            <Button text="Maths" onClick={() => handleSubjectChange("maths")} />
             <Button
               text="Verbal"
               onClick={() => handleSubjectChange("verbal")}

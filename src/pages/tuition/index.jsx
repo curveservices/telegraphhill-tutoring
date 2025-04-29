@@ -28,10 +28,7 @@ const Tuition = () => {
             <h1 className="title">Tailored Learning Programs for Success</h1>
             <div className="hero-p">
               <div className="hero-indent"></div>
-              {/* <p>
-                I provide one on one tutoring in South East London for Key Stage
-                1, Key Stage 2 and 11 plus exam prep.
-              </p> */}
+              <p>Custom Learning Paths That Unlock Student Potential</p>
             </div>
             <HeroCard
               title="Local or Online"
