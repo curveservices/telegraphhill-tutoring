@@ -41,7 +41,7 @@ const DoubleImage = ({ img1, img2, subtitle, title, p1, p2, cards }) => {
                 role="button"
                 tabIndex={0}
               >
-                <div className="card-title">{card.title}</div>
+                <div className="square-title">{card.title}</div>
                 <div className="text">{card.text}</div>
               </div>
             </NavLink>

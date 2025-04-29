@@ -33,6 +33,11 @@
                 transform: scale(1.04);
                 box-shadow: var(--global);
             }
+            .square-title {
+                font-size: 28px;
+                font-family: 'Unna', serif;
+                color: var(--main-font);
+            }
         }
     }
 
