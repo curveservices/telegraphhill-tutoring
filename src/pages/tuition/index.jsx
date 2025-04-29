@@ -48,6 +48,7 @@ const Tuition = () => {
         />
       </section>
       <section className="second-section">
+        <div className="background"></div>
         <div className="second-inner">
           <div className="tuition-container">
             <div className="card">
