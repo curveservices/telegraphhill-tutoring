@@ -25,7 +25,7 @@ const Home = () => {
             </div>
             <h1 className="title">Expert Tutoring for Brighter Futures</h1>
             <div className="hero-p">
-              <p>Providing one-on-one tutoring in South East London.</p>
+              <p>I Provide one-on-one tutoring in South East London.</p>
               <div className="hero-indent"></div>
             </div>
             <HeroCard
