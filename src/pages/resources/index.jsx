@@ -56,7 +56,7 @@ const Resources = () => {
             img1={img1}
             img2={img2}
             subtitle="solved test papers"
-            tite="11 Plus Practice Papers"
+            title="11 Plus Practice Papers"
             p1="Preparing for the 11 Plus can be a challenging time for both children and parents. To support your child’s success, I’ve curated a selection of real 11+ English exam papers from top independent and grammar schools. These question papers are free to download and ideal for use at home to help build confidence, improve comprehension, and sharpen exam technique."
             p2="Each paper comes with a set of professionally solved answers, available behind a secure paywall. These detailed solutions are designed to guide both students and parents through the marking process, making it easier to identify areas for improvement and accelerate learning with clarity and focus."
             cards={[]}
