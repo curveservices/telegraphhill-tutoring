@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_APP_API_KEY,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "telegraph-tutoring.firebaseapp.com",
   projectId: "telegraph-tutoring",
   storageBucket: "telegraph-tutoring.appspot.com",
